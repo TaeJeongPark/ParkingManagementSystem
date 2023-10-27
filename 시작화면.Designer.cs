@@ -40,6 +40,7 @@
             this.btn_in.TabIndex = 0;
             this.btn_in.Text = "입차";
             this.btn_in.UseVisualStyleBackColor = true;
+            this.btn_in.Click += new System.EventHandler(this.btn_in_Click);
             // 
             // btn_out
             // 
@@ -49,6 +50,7 @@
             this.btn_out.TabIndex = 0;
             this.btn_out.Text = "출차";
             this.btn_out.UseVisualStyleBackColor = true;
+            this.btn_out.Click += new System.EventHandler(this.btn_out_Click);
             // 
             // 시작화면
             // 

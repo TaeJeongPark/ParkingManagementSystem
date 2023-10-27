@@ -49,6 +49,7 @@
             this.btn_in.TabIndex = 31;
             this.btn_in.Text = "입차정보";
             this.btn_in.UseVisualStyleBackColor = true;
+            this.btn_in.Click += new System.EventHandler(this.btn_in_Click);
             // 
             // cho_in
             // 

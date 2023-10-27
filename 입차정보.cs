@@ -16,5 +16,10 @@ namespace Project2
         {
             InitializeComponent();
         }
+
+        private void btn_in_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

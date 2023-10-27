@@ -16,5 +16,19 @@ namespace Project2
         {
             InitializeComponent();
         }
+
+        private void btn_in_Click(object sender, EventArgs e)
+        {
+            입차정보 입차 = new 입차정보();
+            입차.Show();
+            this.Hide();
+        }
+
+        private void btn_out_Click(object sender, EventArgs e)
+        {
+            출차정보 출차 = new 출차정보();
+            출차.Show();
+            this.Hide();
+        }
     }
 }

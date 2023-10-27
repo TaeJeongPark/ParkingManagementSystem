@@ -58,6 +58,7 @@
             this.btn_out.TabIndex = 15;
             this.btn_out.Text = "출차정보";
             this.btn_out.UseVisualStyleBackColor = true;
+            this.btn_out.Click += new System.EventHandler(this.btn_out_Click);
             // 
             // cho_in
             // 
