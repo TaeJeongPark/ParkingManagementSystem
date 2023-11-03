@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btn_in = new System.Windows.Forms.Button();
+            this.btn_home = new System.Windows.Forms.Button();
             this.cho_in = new System.Windows.Forms.ComboBox();
             this.bun_in = new System.Windows.Forms.ComboBox();
             this.si_in = new System.Windows.Forms.ComboBox();
@@ -38,18 +38,20 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.btn_in = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // btn_in
+            // btn_home
             // 
-            this.btn_in.Location = new System.Drawing.Point(709, 295);
-            this.btn_in.Name = "btn_in";
-            this.btn_in.Size = new System.Drawing.Size(170, 53);
-            this.btn_in.TabIndex = 31;
-            this.btn_in.Text = "입차정보";
-            this.btn_in.UseVisualStyleBackColor = true;
-            this.btn_in.Click += new System.EventHandler(this.btn_in_Click);
+            this.btn_home.Location = new System.Drawing.Point(709, 295);
+            this.btn_home.Name = "btn_home";
+            this.btn_home.Size = new System.Drawing.Size(170, 53);
+            this.btn_home.TabIndex = 31;
+            this.btn_home.Text = "시작화면";
+            this.btn_home.UseVisualStyleBackColor = true;
+            this.btn_home.Click += new System.EventHandler(this.btn_home_Click);
             // 
             // cho_in
             // 
@@ -98,7 +100,7 @@
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(114, 24);
             this.label3.TabIndex = 18;
-            this.label3.Text = "입차날짜:";
+            this.label3.Text = "입차시간:";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label2
@@ -130,8 +132,24 @@
             this.pictureBox1.Location = new System.Drawing.Point(26, 23);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(453, 325);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 16;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
+            // 
+            // btn_in
+            // 
+            this.btn_in.Location = new System.Drawing.Point(533, 295);
+            this.btn_in.Name = "btn_in";
+            this.btn_in.Size = new System.Drawing.Size(170, 53);
+            this.btn_in.TabIndex = 31;
+            this.btn_in.Text = "입차정보";
+            this.btn_in.UseVisualStyleBackColor = true;
+            this.btn_in.Click += new System.EventHandler(this.btn_in_Click);
             // 
             // 입차정보
             // 
@@ -139,6 +157,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(904, 370);
             this.Controls.Add(this.btn_in);
+            this.Controls.Add(this.btn_home);
             this.Controls.Add(this.cho_in);
             this.Controls.Add(this.bun_in);
             this.Controls.Add(this.si_in);
@@ -150,6 +169,8 @@
             this.Controls.Add(this.pictureBox1);
             this.Name = "입차정보";
             this.Text = "입차정보";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.입차정보_FormClosed);
+            this.Load += new System.EventHandler(this.입차정보_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -158,7 +179,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Button btn_in;
+        private System.Windows.Forms.Button btn_home;
         private System.Windows.Forms.ComboBox cho_in;
         private System.Windows.Forms.ComboBox bun_in;
         private System.Windows.Forms.ComboBox si_in;
@@ -168,5 +189,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private System.Windows.Forms.Button btn_in;
     }
 }

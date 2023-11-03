@@ -26,8 +26,8 @@ namespace Project2
 
         private void btn_out_Click(object sender, EventArgs e)
         {
-            출차정보 출차 = new 출차정보();
-            출차.Show();
+            차량검색 검색 = new 차량검색();
+            검색.Show();
             this.Hide();
         }
     }

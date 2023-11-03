@@ -107,7 +107,7 @@
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(114, 24);
             this.label3.TabIndex = 7;
-            this.label3.Text = "입차날짜:";
+            this.label3.Text = "입차시간:";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label2
@@ -139,6 +139,7 @@
             this.pictureBox1.Location = new System.Drawing.Point(26, 23);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(453, 325);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
             // 
@@ -163,7 +164,7 @@
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(114, 24);
             this.label5.TabIndex = 7;
-            this.label5.Text = "입차날짜:";
+            this.label5.Text = "출차시간:";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // date_out
@@ -255,6 +256,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Name = "출차정보";
             this.Text = "출차정보";
+            this.Load += new System.EventHandler(this.출차정보_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
