@@ -29,7 +29,26 @@ namespace Project2
 
         private void btn_out_Click(object sender, EventArgs e)
         {
-            
+            DateTime car_out = new DateTime(
+                date_out.Value.Year, 
+                date_out.Value.Month, 
+                date_out.Value.Day, 
+                int.Parse(si_out.Text), 
+                int.Parse(bun_out.Text), 
+                int.Parse(cho_out.Text));
+            int money = int.Parse(tb_won.Text);
+
+            sql = "UPDATE parkingTable SET timeout = @out, money = " + money + ", outcheck = 1 WHERE car_num = '" + tb_car.Text + "';";
+            cmd.CommandText = sql;
+            cmd.Parameters.AddWithValue("@out", car_out);
+            cmd.ExecuteNonQuery();
+            cmd.Parameters.Clear();
+
+            MessageBox.Show(tb_car.Text + "차량 결제 완료\n20분 내로 출차해 주세요.");
+
+            this.Close();
+            시작화면 시작 = new 시작화면();
+            시작.Show();
         }
 
         private void 출차정보_Load(object sender, EventArgs e)
@@ -78,6 +97,7 @@ namespace Project2
             {
 
             }
+            reader.Close();
         }
     }
 }

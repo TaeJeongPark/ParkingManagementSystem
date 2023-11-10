@@ -62,6 +62,7 @@
             // 
             // cho_in
             // 
+            this.cho_in.Enabled = false;
             this.cho_in.FormattingEnabled = true;
             this.cho_in.Location = new System.Drawing.Point(797, 134);
             this.cho_in.Name = "cho_in";
@@ -70,6 +71,7 @@
             // 
             // bun_in
             // 
+            this.bun_in.Enabled = false;
             this.bun_in.FormattingEnabled = true;
             this.bun_in.Location = new System.Drawing.Point(709, 134);
             this.bun_in.Name = "bun_in";
@@ -78,6 +80,7 @@
             // 
             // si_in
             // 
+            this.si_in.Enabled = false;
             this.si_in.FormattingEnabled = true;
             this.si_in.Location = new System.Drawing.Point(621, 134);
             this.si_in.Name = "si_in";
@@ -86,6 +89,7 @@
             // 
             // date_in
             // 
+            this.date_in.Enabled = false;
             this.date_in.Location = new System.Drawing.Point(621, 78);
             this.date_in.Name = "date_in";
             this.date_in.Size = new System.Drawing.Size(258, 28);
@@ -93,6 +97,7 @@
             // 
             // tb_car
             // 
+            this.tb_car.Enabled = false;
             this.tb_car.Location = new System.Drawing.Point(621, 23);
             this.tb_car.Name = "tb_car";
             this.tb_car.Size = new System.Drawing.Size(258, 28);
@@ -169,6 +174,7 @@
             // 
             // date_out
             // 
+            this.date_out.Enabled = false;
             this.date_out.Location = new System.Drawing.Point(621, 186);
             this.date_out.Name = "date_out";
             this.date_out.Size = new System.Drawing.Size(258, 28);
@@ -176,6 +182,7 @@
             // 
             // si_out
             // 
+            this.si_out.Enabled = false;
             this.si_out.FormattingEnabled = true;
             this.si_out.Location = new System.Drawing.Point(621, 242);
             this.si_out.Name = "si_out";
@@ -184,6 +191,7 @@
             // 
             // bun_out
             // 
+            this.bun_out.Enabled = false;
             this.bun_out.FormattingEnabled = true;
             this.bun_out.Location = new System.Drawing.Point(709, 242);
             this.bun_out.Name = "bun_out";
@@ -192,6 +200,7 @@
             // 
             // cho_out
             // 
+            this.cho_out.Enabled = false;
             this.cho_out.FormattingEnabled = true;
             this.cho_out.Location = new System.Drawing.Point(797, 242);
             this.cho_out.Name = "cho_out";

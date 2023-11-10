@@ -33,7 +33,7 @@ namespace Project2
             cmd.Connection = conn;
 
             string num = tb_num.Text;
-            sql = "SELECT * FROM parkingTable WHERE car_num like '%" + num + "%';";
+            sql = "SELECT * FROM parkingTable WHERE car_num like '%" + num + "%' AND out_check = 0;";
             cmd.CommandText = sql;
             reader = cmd.ExecuteReader();
 
@@ -41,13 +41,15 @@ namespace Project2
             {
                 출차정보 출차 = new 출차정보(num);
                 출차.Show();
+                this.Close();
             }
             else
             {
-                MessageBox.Show(num + " 번호의 차량이 없습니다.");
+                MessageBox.Show(num + " 번호의 차량은 입차하지 않았거나\n출차 완료한 차량입니다..");
                 tb_num.Text = "";
                 tb_num.Focus();
             }
+            reader.Close();
         }
     }
 }

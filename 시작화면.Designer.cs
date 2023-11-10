@@ -47,7 +47,7 @@
             this.btn_out.Location = new System.Drawing.Point(199, 202);
             this.btn_out.Name = "btn_out";
             this.btn_out.Size = new System.Drawing.Size(498, 118);
-            this.btn_out.TabIndex = 0;
+            this.btn_out.TabIndex = 1;
             this.btn_out.Text = "출차";
             this.btn_out.UseVisualStyleBackColor = true;
             this.btn_out.Click += new System.EventHandler(this.btn_out_Click);
